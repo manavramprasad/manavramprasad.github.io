@@ -1,22 +1,22 @@
 experiences:
 
 
+- place: "Georgia Institute of Technology"
+  time: "2020 - Present"
+  title: "Undergraduate Student"
+  subtitle: "Computer Science Major <br/> Materials Science and Engineering Minor <br/> Zell Miller Scholarship <br/> M. Weldon Rogers Scholarship"
+  category: "school"
+
 - place: "Chao Zhang Research Group"
   time: "Jun 2022 - Present"
   title: "Undergraduate Researcher"
   subtitle: "AI/ML for Healthcare"
   category: "work"
 
-- place: "Georgia Institute of Technology"
-  time: "May 2020 - Present"
-  title: "Student"
-  subtitle: "Computer Science Major  <br/> Materials Science and Engineering Minor"
-  category: "school"
-
-- place: "Experimental Flights Vertically Integrated Project"
-  time: "May Aug 2022 - Present"
-  title: "Sub-Team Leader"
-  subtitle: "Warehouse Management Solutions Team"
+- place: "Experimental Flights"
+  time: "Aug 2022 - Present"
+  title: "Warehouse Management Solutions Team"
+  subtitle: "Vertically Integrated Project"
   category: "work"
 
 - place: "U.S. Bank"
@@ -36,15 +36,15 @@ experiences:
   title: "Research Intern"
   subtitle: "Computational Materials Science"
   category: "work"
-
-- place: "Georgia Tech Engineering Analytics Group"
-  time: "Aug 2019 - Dec 2019"
-  title: "Research Intern"
-  subtitle: "Data Indentification Efficiency"
-  category: "work"
-
-- place: "Wheeler High School"
+  
+  - place: "Wheeler High School"
   time: "2018 - 2020"
   title: "Student"
   subtitle: "Magnet Program"
   category: "school"
+
+- place: "Engineering Analytics Group"
+  time: "Aug 2019 - Dec 2019"
+  title: "Research Intern"
+  subtitle: "Georgia Institute of Technology"
+  category: "work"
