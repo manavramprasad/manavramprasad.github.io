@@ -4,7 +4,7 @@ experiences:
 - place: "Georgia Institute of Technology"
   time: "2020 - Present"
   title: "Undergraduate Student"
-  subtitle: "Computer Science Major <br/> Materials Science and Engineering Minor <br/> Zell Miller Scholarship <br/> M. Weldon Rogers Scholarship"
+  subtitle: "Computer Science Major <br/> Materials Science and Engineering Minor"
   category: "school"
 
 - place: "Chao Zhang Research Group"
@@ -20,7 +20,7 @@ experiences:
   category: "work"
 
 - place: "U.S. Bank"
-  time: "Aug 2022 – Dec 2022"
+  time: "Aug 2022 - Dec 2022"
   title: "Software Engineering Intern"
   subtitle: "Full-Stack Delevopment"
   category: "work"
