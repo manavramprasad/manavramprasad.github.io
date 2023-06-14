@@ -93,7 +93,8 @@ title: Home
     </div>
 
     <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
+      {% assign projects = site.data.publications.papers | where: "selected", "n" %}
+      {% for paper in projects %}
         <div class="paper">
           <p class="title"><b>{{ paper.title }}</b></p>
           <p>{{ paper.authors }}</p>
