@@ -17,6 +17,13 @@ papers:
     paper_pdf: "/assets/publications:projects/JEI.pdf"
     selected: y
 
+  - title: "Warehouse Management System"
+    authors: "Manav Ramprasad, William Runyon, Michael Mayo"
+    venue: "Experimental Flights Vertically Integrated Project"
+    code: "https://github.gatech.edu/experimental-flights/warehouse_management_system"
+    slides: "/assets/publications:projects/InventoryManagement.pptx"
+    selected: n
+
   - title: "Machine learning based patient severity score and mortality rate predictions"
     authors: "Manav Ramprasad, Medhana Kadiyala, Ruthvika Garlapati, Aashvi Patel, Kirtana Mogili"
     venue: "Georgia Institute of Technology"
@@ -32,9 +39,3 @@ papers:
     video: "/assets/publications:projects/AtlantaWeatherPredictions.mp4"
     selected: n
 
-  - title: "Warehouse Management System"
-    authors: "Manav Ramprasad, William Runyon"
-    venue: "Experimental Flights Vertically Integrated Project"
-    code: "https://github.gatech.edu/experimental-flights/warehouse_management_system"
-    slides: "/assets/publications:projects/InventoryManagement.pptx"
-    selected: n
