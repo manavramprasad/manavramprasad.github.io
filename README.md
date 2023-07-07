@@ -1,4 +1,6 @@
-# Martin Saveski's Website
+# Manav Ramprasad's Website
+
+# Forked from Martin Saveski's website
 
 ## Updates guide
 Change one of the files in `_data`, unless you are changing the look of the website.
