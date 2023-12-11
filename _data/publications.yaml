@@ -2,7 +2,8 @@ papers:
 
   - title: "TransEHR: Self-Supervised Transformer for Clinical Time Series Data"
     authors: "Yanbo Xu, Shangqing Xu, Manav Ramprasad, Alexey Tumanov, Chao Zhang"
-    venue: "Submitted to ML4H 2023"
+    venue: "Machine Learning for Health (ML4H2023)"
+    paper_pdf: "/assets/publications:projects/TransEHR_ML4H.pdf"
     selected: y
   
   - title: "Machine-learning predictions of polymer properties with Polymer Genome"

@@ -1,234 +1,65 @@
----
-layout: default
-title: Home
----
-<!-- ========== BIO ========== -->
-<div class="docs-section" id="bio">
-  <h4>Bio</h4>
-  <p>
-  I am currently a Computer Science undergraduate student at the Georgia Institute of Technology with a minor in Materials Science and Engineering. 
-  </p>
-
-  <p>
-  My research interests lie in applying Artificial Intelligence and Machine Learning methods to specific domains of science, such as Healthcare and Materials Science.
-  I have two published papers, and a third has been submitted for NeurIPS 2023.
-  I am presently working under <a href="http://chaozhang.org" target="_blank">Dr. Chao Zhang</a> on improving limited context memory and multi-step reasoning of Large Language Models for healthcare applications.
-  </p>
-
-  <p>
-  I have played chess my entire life, becoming Connecticut State Champion for my grade during high school, and hosting many chess tournaments and camps for younger students.
-  In college, I joined the Georgia Tech Chess Club, and held the position of Vice President of Marketing, as well as playing for Georgia Tech's chess team at collegiate tournaments across the country! 
-  I am also an American Invitational Mathematics Examination qualifier, a Georgia Tech Undergraduate Research Ambassador, and a Brother of the Alpha Kappa Psi Business Fraternity.
-  I've always been fascinated by math, puzzles, and discovery; Research in CS was the obvious choice!
-  </p> 
-</div>
-
-<!--<div class="docs-section" id="prospective-students">  
-  <h4>Prospective Students</h4>
-  <p>
-  <b>I'm recruiting PhD students to start Fall 2023 at the University of Washington! </b>
-  I'm especially looking for students with a background and/or interest in <i>social network analysis, machine learning, causal inference, or natural language processing</i>, and are passionate about using computational methods to study how online social platforms can be reimagined to <i>enable better conversations, bridge political divides, and reduce the spread of misinformation</i>. 
-  If you are interested, please apply to the UW iSchool <a href="https://ischool.uw.edu/programs/phd/admissions" target="_blank">PhD program</a> and mention me in your application.
-  If you have any questions, feel free to reach out by email!
-  </p> 
-</div>-->
-
-
-<!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="publications">
-  <h4>Publications and Projects</h4>
-
-  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
-  </p>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Publications</div></li>
-    <li><div class="button" data-ref="#papers-all">Projects</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
-      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in selected_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="papers-all">
-      {% assign projects = site.data.publications.papers | where: "selected", "n" %}
-      {% for paper in projects %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-
-<!-- ========== PROJECTS ========== 
-<div class="docs-section" id="projects">
-  <h4>Projects</h4>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-all">All</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-      {% for project in selected_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="projects-all">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-</div>
--->
-
-<!-- ========== RESUME ========== -->
-<div class="docs-section" id="resume">
-  <h4>Resumé</h4>
-
-  <p>Full Resumé in <a href={{ "/assets/cv/cv_web.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
-
-  <!-- The Timeline -->
-  <ul class="timeline">
-    {% for exp in site.data.experience.experiences %}
-    <li>
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-        </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
-
-
-<div class="docs-section" id="template">
-    <h4>Acknowledgement</h4>
-    
-    Thank you to <a href="https://web.stanford.edu/~msaveski/" target="_blank">Dr. Martin Saveski</a> who created this website design! <br/>
-
-
-</div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
+    span.s3 {-webkit-text-stroke: 0px #000000}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">--- layout: default title: Home ---</span></p>
+<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Bio</b></span></h4>
+<p class="p3"><span class="s1">I am currently a Computer Science undergraduate student at the Georgia Institute of Technology with a minor in Materials Science and Engineering.</span></p>
+<p class="p3"><span class="s1">My research interests lie in applying Artificial Intelligence and Machine Learning methods to specific domains of science, such as Healthcare and Materials Science. I have three published papers, and am presently working under <a href="http://chaozhang.org/"><span class="s2">Dr. Chao Zhang</span></a> on improving limited context memory and multi-step reasoning of Large Language Models for healthcare applications.</span></p>
+<p class="p3"><span class="s1">I have played chess my entire life, becoming Connecticut State Champion for my grade during high school, and hosting many chess tournaments and camps for younger students. In college, I joined the Georgia Tech Chess Club, and held the position of Vice President of Marketing, as well as playing for Georgia Tech's chess team at collegiate tournaments across the country! I am also an American Invitational Mathematics Examination qualifier, a Georgia Tech Undergraduate Research Ambassador, and a Brother of the Alpha Kappa Psi Business Fraternity. I've always been fascinated by math, puzzles, and discovery; Research in CS was the obvious choice!</span></p>
+<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Publications and Projects</b></span></h4>
+<p class="p3"><span class="s1">Most recent publications on <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20site.data.main_info.google_scholar%20%7D%7D"><span class="s2">Google Scholar</span></a>.</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s3"></span><span class="s1">Publications</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s3"></span><span class="s1">Projects</span></li>
+</ul>
+<p class="p1"><span class="s1">{% assign selected_papers = site.data.publications.papers | where: "selected", "y" %} {% for paper in selected_papers %}</span></p>
+<p class="p3"><span class="s1"><b>{{ paper.title }}</b></span></p>
+<p class="p3"><span class="s1">{{ paper.authors }}</span></p>
+<p class="p3"><span class="s1"><i>{{ paper.venue }}</i></span></p>
+<p class="p1"><span class="s1">{% if paper.paper_pdf %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.paper_pdf%20%7C%20prepend:%20site.baseurl%20%7D%7D"><span class="s2">Paper</span></a> {% endif %} {% if paper.slides %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.slides%20%7C%20prepend:%20site.baseurl%20%7D%7D"><span class="s2">Slides</span></a> {% endif %} {% if paper.poster %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.poster%20%7C%20prepend:%20site.baseurl%20%7D%7D"><span class="s2">Poster</span></a> {% endif %} {% if paper.video %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.video%20%7D%7D"><span class="s2">Video</span></a> {% endif %} {% if paper.code %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.code%20%7D%7D"><span class="s2">Code</span></a> {% endif %} {% if paper.data %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.data%20%7D%7D"><span class="s2">Data</span></a> {% endif %}</span></p>
+<p class="p1"><span class="s1">{% endfor %}</span></p>
+<p class="p1"><span class="s1">{% assign projects = site.data.publications.papers | where: "selected", "n" %} {% for paper in projects %}</span></p>
+<p class="p3"><span class="s1"><b>{{ paper.title }}</b></span></p>
+<p class="p3"><span class="s1">{{ paper.authors }}</span></p>
+<p class="p3"><span class="s1"><i>{{ paper.venue }}</i></span></p>
+<p class="p1"><span class="s1">{% if paper.paper_pdf %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.paper_pdf%20%7C%20prepend:%20site.baseurl%20%7D%7D"><span class="s2">Paper</span></a> {% endif %} {% if paper.slides %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.slides%20%7C%20prepend:%20site.baseurl%20%7D%7D"><span class="s2">Slides</span></a> {% endif %} {% if paper.poster %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.poster%20%7C%20prepend:%20site.baseurl%20%7D%7D"><span class="s2">Poster</span></a> {% endif %} {% if paper.video %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.video%20%7D%7D"><span class="s2">Video</span></a> {% endif %} {% if paper.code %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.code%20%7D%7D"><span class="s2">Code</span></a> {% endif %} {% if paper.data %} <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B%20paper.data%20%7D%7D"><span class="s2">Data</span></a> {% endif %}</span></p>
+<p class="p1"><span class="s1">{% endfor %}</span></p>
+<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>ResumÃ©</b></span></h4>
+<p class="p3"><span class="s1">Full ResumÃ© in <a href="file:///Users/manavramprasad/manavramprasad.github.io/%7B%7B"><span class="s2">PDF</span></a>.</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s3"></span><span class="s1">{% for exp in site.data.experience.experiences %}</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s3"></span><span class="s1">{% if exp.category == "work" %} {% else %} {% endif %} {{ exp.place }} {{ exp.time }} <br>
+<b>{{ exp.title }}</b><span class="Apple-converted-space"> </span></span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s3"></span><span class="s1">{{ exp.subtitle }}<br>
+<br>
+</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s3"></span><span class="s1">{% endfor %}</span></li>
+</ul>
+<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Acknowledgement</b></span></h4>
+<p class="p1"><span class="s1">Thank you to <a href="https://web.stanford.edu/~msaveski/"><span class="s2">Dr. Martin Saveski</span></a> who created this website design!<span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>
