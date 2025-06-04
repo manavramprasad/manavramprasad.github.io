@@ -1,26 +1,38 @@
 experiences:
 
 
+- place: "University of Toronto"
+  time: "2025 - Present"
+  title: "Ph.D. Student"
+  subtitle: "Computer Science <br/> The Matter Lab <br/> Supervisor: Alán Aspuru-Guzik"
+  category: "school"
+
+- place: "Fung Lab"
+  time: "May 2024 - May 2025"
+  title: "Researcher"
+  subtitle: "ML for Materials Simulations"
+  category: "work"
+
 - place: "Georgia Institute of Technology"
-  time: "2020 - Present"
-  title: "Undergraduate Student"
-  subtitle: "Computer Science Major <br/> Materials Science and Engineering Minor <br/> Zell Miller Scholarship <br/> M. Weldon Rogers Scholarship"
+  time: "2020 - 2024"
+  title: "Bachelor of Science"
+  subtitle: "Computer Science Major <br/> Materials Science and Engineering Minor <br/> NSF GRFP Honorable Mention <br/> Zell Miller Scholarship <br/> M. Weldon Rogers Scholarship"
   category: "school"
 
 - place: "Chao Zhang Research Group"
-  time: "Jun 2022 - Present"
+  time: "Jun 2022 - Nov 2024"
   title: "Undergraduate Researcher"
   subtitle: "AI/ML for Healthcare"
   category: "work"
 
 - place: "Georgia Tech URA"
-  time: "Aug 2023 - Present"
+  time: "Aug 2023 - May 2024"
   title: "Undergraduate Research Ambassador"
   subtitle: "Organization"
   category: "work"
 
 - place: "Experimental Flights"
-  time: "Aug 2022 - Present"
+  time: "Aug 2022 - May 2024"
   title: "Warehouse Management Solutions Team Lead"
   subtitle: "Vertically Integrated Project"
   category: "work"
