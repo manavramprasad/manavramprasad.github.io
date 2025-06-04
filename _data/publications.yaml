@@ -6,7 +6,7 @@ papers:
     paper_pdf: "/assets/publications:projects/TransEHR_ML4H.pdf"
     selected: y
   
-  - title: "Machine-learning predictions of polymer properties with Polymer Genome"
+  - title: "Machine-Learning Predictions of Polymer Properties with Polymer Genome"
     authors: "Huan Doan Tran et al"
     venue: "Journal of Applied Physics"
     paper_pdf: "/assets/publications:projects/JAP.pdf"
@@ -16,6 +16,12 @@ papers:
     authors: "Manav Ramprasad, Chiho Kim"
     venue: "Journal of Emerging Investigators"
     paper_pdf: "/assets/publications:projects/JEI.pdf"
+    selected: y
+
+  - title: "Pre-training Graph Neural Networks with Structural Fingerprints for Materials Discovery"
+    authors: "Shuyi Jia, Shitij Govil, Manav Ramprasad, Victor Fung"
+    venue: "Pre-Print on Arxiv"
+    paper_pdf: "/assets/publications:projects/Fung.pdf"
     selected: y
 
   - title: "Warehouse Management System"
