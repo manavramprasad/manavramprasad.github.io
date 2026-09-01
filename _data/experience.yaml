@@ -7,9 +7,15 @@ experiences:
   subtitle: "Computer Science <br/> The Matter Lab <br/> Supervised by Alán Aspuru-Guzik"
   category: "school"
 
-- place: "CUPE 3902, University of Toronto"
+- place: "Vector Institute"
+  time: "September 2025 - Present"
+  title: "Researcher"
+  subtitle: "Ph.D Student"
+  category: "work"
+
+- place: "CUPE 3902"
   time: "August 2026 - Present"
-  title: "Steward"
+  title: "Steward at the University of Toronto"
   subtitle: "Unit 1, Computer Science Graduate Students"
   category: "work"
 
@@ -19,10 +25,16 @@ experiences:
   subtitle: "Re-stocking and Check-in"
   category: "work"
 
-- place: "Vector Institute"
+- place: "CSC108: Intro to Computer Programming"
   time: "September 2025 - Present"
-  title: "Researcher"
-  subtitle: "Ph.D Student"
+  title: "Teaching Assistant"
+  subtitle: "University of Toronto"
+  category: "work"
+
+- place: "Matter Lab International Satellite School"
+  time: "August 2026"
+  title: "Tutor"
+  subtitle: "Universidad Nacional Autónoma de México (UNAM), Mexico City campus"
   category: "work"
 
 - place: "Fung Lab"
