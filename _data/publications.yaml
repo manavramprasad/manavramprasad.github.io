@@ -1,8 +1,14 @@
 papers:
 
+  - title: "El Agente Cuántico: Automating quantum simulations"
+    authors: "Ignacio Gustin, Luis Mantilla Calderón, Juan B. Pérez-Sánchez, Chris Crebolder, Jérôme F. Gonthier, Mohammad Ghazi Vakili, Yuma Nakamura, Karthik Panicker, Manav Ramprasad, Zijian Zhang, Yunheng Zou, Varinia Bernales, Alán Aspuru-Guzik"
+    venue: "Reports on Progress in Physics"
+    paper_pdf: "/assets/publications:projects/Cuantico.pdf"
+    selected: y
+
   - title: "TransEHR: Self-Supervised Transformer for Clinical Time Series Data"
     authors: "Yanbo Xu, Shangqing Xu, Manav Ramprasad, Alexey Tumanov, Chao Zhang"
-    venue: "Machine Learning for Health (ML4H2023)"
+    venue: "Machine Learning for Health"
     paper_pdf: "/assets/publications:projects/TransEHR_ML4H.pdf"
     selected: y
   
@@ -24,11 +30,10 @@ papers:
     paper_pdf: "/assets/publications:projects/Fung.pdf"
     selected: y
 
-  - title: "Evaluating Uncertainty Quantification in Co-folding Models under Distribution Shift"
-    authors: "Manav Ramprasad, Walter Virany, Amogh Joshi, Jaswin Hargun"
-    venue: "AI for Drug Discovery"
-    code: "https://github.com/wvirany/boltz-UQ"
-    paper_pdf: "/assets/publications:projects/Co-folding_Uncertainty_Quantification.pdf"
+  - title: "Optimal Time Discretization in Quantum Simulation: The Trade-off Between Trotter Error and Finite Precision"
+    authors: "Manav Ramprasad"
+    venue: "University of Toronto"
+    paper_pdf: "/assets/publications:projects/Quantum_Algorithms_Final_Project.pdf"
     selected: n
     
   - title: "Evaluating Uncertainty Quantification in Co-folding Models under Distribution Shift"
@@ -38,6 +43,13 @@ papers:
     paper_pdf: "/assets/publications:projects/Co-folding_Uncertainty_Quantification.pdf"
     selected: n
 
+  - title: "Multi-Linear Formulas for Permanent and Determinant are of Super-Polynomial Size: An Analysis"
+    authors: "Manav Ramprasad"
+    venue: "University of Toronto"
+    paper_pdf: "/assets/publications:projects/Alegbraic_Complexity_FinalReport.pdf"
+    slides: "/assets/publications:projects/Multi-Linear_Lower_Bounds.pptx"
+    selected: n
+    
   - title: "Warehouse Management System"
     authors: "Manav Ramprasad, William Runyon, Michael Mayo"
     venue: "Experimental Flights Vertically Integrated Project"
@@ -45,14 +57,14 @@ papers:
     slides: "/assets/publications:projects/InventoryManagement.pptx"
     selected: n
 
-  - title: "Machine learning based patient severity score and mortality rate predictions"
+  - title: "Machine Learning Based Patient Severity Score and Mortality Rate Predictions"
     authors: "Manav Ramprasad, Medhana Kadiyala, Ruthvika Garlapati, Aashvi Patel, Kirtana Mogili"
     venue: "Georgia Institute of Technology"
     code: "https://github.gatech.edu/rgarlapati3/MachineLacking-old-"
     video: "https://www.youtube.com/watch?v=00MImUUdXO4"
     selected: n
 
-  - title: "Using computer simulation methods for Atlanta Weather and Climate prediction"
+  - title: "Using Computer Simulation Methods for Atlanta Weather and Climate Prediction"
     authors: "Manav Ramprasad, Sarang Pujari, Khushi Magiawala, Somil Jain"
     venue: "Georgia Institute of Technology"
     paper_pdf: "/assets/publications:projects/AtlantaWeatherPredictions.pdf"
