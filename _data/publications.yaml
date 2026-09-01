@@ -24,6 +24,20 @@ papers:
     paper_pdf: "/assets/publications:projects/Fung.pdf"
     selected: y
 
+  - title: "Evaluating Uncertainty Quantification in Co-folding Models under Distribution Shift"
+    authors: "Manav Ramprasad, Walter Virany, Amogh Joshi, Jaswin Hargun"
+    venue: "AI for Drug Discovery"
+    code: "https://github.com/wvirany/boltz-UQ"
+    paper_pdf: "/assets/publications:projects/Co-folding_Uncertainty_Quantification.pdf"
+    selected: n
+    
+  - title: "Evaluating Uncertainty Quantification in Co-folding Models under Distribution Shift"
+    authors: "Manav Ramprasad, Walter Virany, Amogh Joshi, Jaswin Hargun"
+    venue: "AI for Drug Discovery"
+    code: "https://github.com/wvirany/boltz-UQ"
+    paper_pdf: "/assets/publications:projects/Co-folding_Uncertainty_Quantification.pdf"
+    selected: n
+
   - title: "Warehouse Management System"
     authors: "Manav Ramprasad, William Runyon, Michael Mayo"
     venue: "Experimental Flights Vertically Integrated Project"
